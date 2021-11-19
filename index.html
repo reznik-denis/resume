@@ -12,104 +12,424 @@
 <body>
     <div class="container">
         <header>
-            <nav class="nav" id="home">
-                <ul class="nav-list list">
-                    <li class="nav-item">
-                        <a class="link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="link" href="#about-me">About me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="link" href="#experience">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="link" href="#education">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="link" href="#contacts">Contacts</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="section-padding">
+                <nav class="nav" id="home">
+                    <ul class="nav-list list">
+                        <li class="nav-item">
+                            <a class="link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="link" href="#about-me">About me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="link" href="#experience">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="link" href="#education">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="link" href="#contacts">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <main>
-            <section class="hero">
-                <div class="hero-text-thumb">
-                    <h1 class="hero-title">Denis Reznik</h1>
-                    <p class="hero-description">Junior/Trainee Front-end Developer</p>
+            <div class="section-padding">
+                <section class="hero">
+                    <div class="hero-text-thumb">
+                        <h1 class="hero-title">Denis Reznik</h1>
+                        <p class="hero-description">Front-end Developer</p>
+                    </div>
+                    <div class="hero-img-thumb">
+                        <img src="./images/logo.jpg" alt="Main foto" width="940px">
+                    </div>
+                </section>
+            </div>
+            <section class="about-me section" id="about-me">
+                <div class="section-padding">
+                    <h2 class="about-me-title">About me</h2>
+                    <p class="about-me-description">I have been working web programming for the last two year. I have
+                        experience
+                    <p class="about-me-description">I have experience with programming web-application with javascript and
+                        react.</p>
+                    <p class="about-me-description">I want to become a strong developer and
+                        realize great and difficult projects. Result-oriented, confident and communicative person</p>
                 </div>
-                <div class="hero-img-thumb">
-                    <img src="./images/logo.jpg" alt="Main foto" width="940px">
-                </div>
-            </section>
-            <section class="about-me" id="about-me">
-                <h2 class="about-me-title">About me</h2>
-                <p class="about-me-description">I have been working web programming for the last two year. <br> I have
-                    experience
-                    with programming web-application with javascript and react. <br> I want to become a strong developer and
-                    realize great and difficult projects. Result-oriented, confident and communicative person</p>
             </section>
             <section class="skills" id="skills">
-                <h2 class="skills-title">Skills</h2>
-                <h3 class="teh-skills">Technical skills</h3>
-                <ul class="teh-skills-list list">
-                    <li class="teh-skills-item">HTML5</li>
-                    <li class="teh-skills-item">CSS, SCSS</li>
-                    <li class="teh-skills-item">Bootstrap</li>
-                    <li class="teh-skills-item">JavaScript</li>
-                    <li class="teh-skills-item">Handlebars</li>
-                    <li class="teh-skills-item">Webpack</li>
-                    <li class="teh-skills-item">React.js</li>
-                    <li class="teh-skills-item">Git</li>
-                    <li class="teh-skills-item">Bash</li>
-                    <li class="teh-skills-item">Node.js</li>
-                    <li class="teh-skills-item">Redux</li>
-                </ul>
-                <h3 class="soft-skills">Soft skills</h3>
-                <ul class="soft-skills list list">
-                    <li class="soft-skills-item">Problem Solving</li>
-                    <li class="soft-skills-item">Teamwork</li>
-                    <li class="soft-skills-item">Communication</li>
-                    <li class="soft-skills-item">Perseverance</li>
-                    <li class="soft-skills-item">Creativity</li>
-                    <li class="soft-skills-item">Curiosity</li>
-                    <li class="soft-skills-item">Interest in Helping Others</li>
-                </ul>
-                <h3 class="languages">
-                    <ul class="languages-list list">
-                        <li class="languages-item">Ukrainian - Native</li>
-                        <li class="languages-item">Russian - Native</li>
-                        <li class="languages-item">English - Pre-Intermediate</li>
+                <div class="section-padding">
+                    <h2 class="skills-title">Skills</h2>
+                    <h3 class="skills-subtitle">Technical skills</h3>
+                    <ul class="skills-subtitle-list list">
+                        <li class="skills-subtitle-item">
+                            <svg class="icon" width="90" height="90">
+                                <use href="./images/sprite.svg#icon-html5"></use>
+                            </svg>
+                            <span>HTML5</span>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                        </li>
+                        <li class="skills-subtitle-item">
+                            <svg class="icon" width="90" height="90">
+                                <use href="./images/sprite.svg#icon-css"></use>
+                            </svg>
+                            <span>CSS, SCSS</span>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg></li>
+                        <li class="skills-subtitle-item">
+                            <svg class="icon" width="90" height="90">
+                                <use href="./images/sprite.svg#icon-bootstrap"></use>
+                            </svg>
+                            <span>Bootstrap</span>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star" href="./images/sprite.svg#icon-Star"></use>
+                            </svg></li>
+                        <li class="skills-subtitle-item">
+                            <svg class="icon" width="90" height="90">
+                                <use href="./images/sprite.svg#icon-javascript"></use>
+                            </svg>
+                            <span>JavaScript</span>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star" href="./images/sprite.svg#icon-Star"></use>
+                            </svg></li>
+                        <li class="skills-subtitle-item">
+                            <svg class="icon" width="90" height="90">
+                                <use href="./images/sprite.svg#icon-handlebars"></use>
+                            </svg>
+                            <span>Handlebars</span>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star" href="./images/sprite.svg#icon-Star"></use>
+                            </svg></li>
+                        <li class="skills-subtitle-item">
+                            <svg class="icon" width="90" height="90">
+                                <use href="./images/sprite.svg#icon-webpack"></use>
+                            </svg>
+                            <span>Webpack</span>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star" href="./images/sprite.svg#icon-Star"></use>
+                            </svg></li>
+                        <li class="skills-subtitle-item">
+                            <svg class="icon" width="90" height="90">
+                                <use href="./images/sprite.svg#icon-react"></use>
+                            </svg>
+                            <span>React.js</span>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star" href="./images/sprite.svg#icon-Star"></use>
+                            </svg></li>
+                        <li class="skills-subtitle-item">
+                            <svg class="icon" width="90" height="90">
+                                <use href="./images/sprite.svg#icon-github"></use>
+                            </svg>
+                            <span>Git</span>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star" href="./images/sprite.svg#icon-Star"></use>
+                            </svg></li>
+                        <li class="skills-subtitle-item">
+                            <svg class="icon" width="90" height="90">
+                                <use href="./images/sprite.svg#icon-bash"></use>
+                            </svg>
+                            <span>Bash</span>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star" href="./images/sprite.svg#icon-Star"></use>
+                            </svg></li>
+                        <li class="skills-subtitle-item">
+                            <svg class="icon" width="90" height="90">
+                                <use href="./images/sprite.svg#icon-nodejs"></use>
+                            </svg>
+                            <span>Node.js</span>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star" href="./images/sprite.svg#icon-Star"></use>
+                            </svg></li>
+                        <li class="skills-subtitle-item">
+                            <svg class="icon" width="90" height="90">
+                                <use href="./images/sprite.svg#icon-redux"></use>
+                            </svg>
+                            <span>Redux</span>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star" href="./images/sprite.svg#icon-Star"></use>
+                            </svg></li>
                     </ul>
-                </h3>
+                    <h3 class="skills-subtitle">Soft skills</h3>
+                    <ul class="skills-subtitle-list list">
+                        <li class="skills-subtitle-item">
+                            <svg class="icon" width="90" height="90">
+                                <use href="./images/sprite.svg#icon-problem-solving"></use>
+                            </svg>
+                            <span>Problem Solving</span>
+                            </li>
+                        <li class="skills-subtitle-item">
+                            <svg class="icon" width="90" height="90">
+                                <use href="./images/sprite.svg#icon-teamwork"></use>
+                            </svg>
+                            <span>Teamwork</span>
+                            </li>
+                        <li class="skills-subtitle-item">
+                            <svg class="icon" width="90" height="90">
+                                <use href="./images/sprite.svg#icon-communication"></use>
+                            </svg>
+                            <span>Communication</span></li>
+                        <li class="skills-subtitle-item">
+                            <svg class="icon" width="90" height="90">
+                                <use href="./images/sprite.svg#icon-perseverance"></use>
+                            </svg>
+                            <span>Perseverance</span></li>
+                        <li class="skills-subtitle-item">
+                            <svg class="icon" width="90" height="90">
+                            <use href="./images/sprite.svg#icon-creativity"></use>
+                            </svg>
+                        <span>Creativity</span></li>
+                        <li class="skills-subtitle-item">
+                            <svg class="icon" width="90" height="90">
+                            <use href="./images/sprite.svg#icon-curiosly"></use>
+                            </svg>
+                            <span>Curiosity</span></li>
+                        <li class="skills-subtitle-item">
+                            <svg class="icon" width="90" height="90">
+                            <use href="./images/sprite.svg#icon-interest"></use>
+                            </svg>
+                            <span>Interest in Helping Others</span></li>
+                    </ul>
+                    <h3 class="skills-subtitle">Language</h3>
+                        <ul class="skills-subtitle-list list">
+                            <li class="skills-subtitle-item">
+                                <svg class="icon" width="90" height="90">
+                                    <use href="./images/sprite.svg#icon-ua"></use>
+                                </svg>
+                                <span>Ukrainian</span>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg></li>
+                            <li class="skills-subtitle-item">
+                                <svg class="icon" width="90" height="90">
+                                    <use href="./images/sprite.svg#icon-ru"></use>
+                                </svg>
+                                <span>Russian</span>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg></li>
+                            <li class="skills-subtitle-item">
+                                <svg class="icon" width="90" height="90">
+                                    <use href="./images/sprite.svg#icon-gb"></use>
+                                </svg>
+                                <span>English</span>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star-black" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star" href="./images/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="icon" width="20" height="20">
+                                <use class="icon-star" href="./images/sprite.svg#icon-Star"></use>
+                            </svg></li>
+                        </ul>
+                </div>
             </section>
-            <section class="experience" id="experience">
+            <section class="experience section" id="experience">
                 <h2 class="experience-title">Experience</h2>
                 <ul class="experience-list list">
                     <li class="experience-item">
-                        <p class="experience-item-data">Jule 2020 - Present</p>
-                        <p class="experience-item-title">Paralegals.org.ua</p>
-                        <p class="experience-item-description">Administration site</p>
+                        <a href="https://paralegals.org.ua/">
+                            <div class="thumb">
+                                <img src="./images/paralegals.jpg" alt="paralegals">
+                            </div>
+                            <p class="experience-item-data">Jule 2020 - Present</p>
+                            <p class="experience-item-title">Paralegals.org.ua</p>
+                            <p class="experience-item-description">Administration site</p>
+                        </a>
                     </li>
                     <li class="experience-item">
+                        <div class="thumb">
+                            <img src="./images/freelance.png" alt="freelance">
+                        </div>
                         <p class="experience-item-data">September 2018 - Present</p>
                         <p class="experience-item-title">Freelance</p>
                         <p class="experience-item-description">HTML, CSS, JavaSkript, Web development, Wordpress, OpenCart</p>
                     </li>
                     <li class="experience-item">
-                        <p class="experience-item-data">May 2018 - June 2018</p>
-                        <p class="experience-item-title">Tehnikadoma.com.ua</p>
-                        <p class="experience-item-description">Website development - installation of design, CMS, configuration
-                            of
-                            additional modules, installation on hosting, administration</p>
+                        <a href="https://tehnikadoma.com.ua/ua">
+                            <div class="thumb">
+                                <img src="./images/tehnikadoma-logo.jpg" alt="tehnikadoma">
+                            </div>
+                            <p class="experience-item-data">May 2018 - June 2018</p>
+                            <p class="experience-item-title">Tehnikadoma.com.ua</p>
+                            <p class="experience-item-description">Website development - installation of design, CMS, configuration
+                                of
+                                additional modules, installation on hosting, administration</p>
+                        </a>
                     </li>
                 </ul>
+                
             </section>
             <section class="portfolio" id="portfolio">
                 <h2 class="portfolio-title">Portfolio</h2>
@@ -203,6 +523,6 @@
             </ul>
             <button type="button">Up to home</button>
         </footer>
-    </div>
+    </div>     
 </body>
 </html>
