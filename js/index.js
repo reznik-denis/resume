@@ -14,6 +14,21 @@ refs.openModel.addEventListener('click', onOpenModal);
 refs.closeModelBtn.addEventListener('click', onCloseModal);
 refs.showModel.addEventListener('click', onCloseModalByClickBackdrop);
 
+(() => {
+    const menuBtnRef = document.querySelector("[data-menu-button]");
+    const mobileMenuRef = document.querySelector("[data-menu]");
+
+    menuBtnRef.addEventListener("click", () => {
+        const expanded =
+            menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+
+        menuBtnRef.classList.toggle("is-open");
+        menuBtnRef.setAttribute("aria-expanded", !expanded);
+
+        mobileMenuRef.classList.toggle("is-open");
+    });
+})();
+
 function onOpenModal(e) {
     e.preventDefault();
     refs.showModel.classList.add('is-open');
@@ -80,3 +95,42 @@ function reset() {
 function isNumber(n) {
   return !isNaN(parseFloat(n)) && isFinite(n);
 }
+
+
+let skroled = 0;
+let timer;
+
+const goTopBtn = document.querySelector(".scrollToTop");
+
+window.onload = function () {
+    goTopBtn.addEventListener('click', goUp);
+    window.addEventListener('scroll', trackScroll);
+}
+
+function goUp() {
+    skroled = window.pageYOffset;
+    skrollToTop();
+}
+
+function skrollToTop() {
+    if (skroled > 0) {
+        window.scrollTo(0, skroled);
+        skroled = skroled - 10000;
+        timer = setTimeout(skrollToTop, 10);
+    } else {
+        clearTimeout(timer);
+        window.scrollTo(0, 0);
+    }
+}
+
+function trackScroll() {
+    skroled = window.pageYOffset;
+    let coords = document.documentElement.clientHeight;
+
+    if (skroled > coords) {
+      goTopBtn.classList.add('back_to_top-show');
+    }
+    if (skroled < coords) {
+      goTopBtn.classList.remove('back_to_top-show');
+    }
+  }

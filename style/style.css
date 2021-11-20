@@ -30,32 +30,37 @@ img {
 }
 
 .container {
-  padding-left: 30px;
-  padding-right: 30px;
-  margin: 0 auto;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+.section-padding {
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 @media screen and (min-width: 375px) {
   .container {
-    width: 375px;
+    max-width: 375px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1445px) {
   .container {
-    width: 1445px;
+    max-width: 1445px;
   }
-}
-
-.section-padding {
-  padding-left: 250px;
-  padding-right: 250px;
+  .section-padding {
+    padding-left: 250px;
+    padding-right: 250px;
+  }
 }
 
 .list {
@@ -70,22 +75,91 @@ img {
 }
 
 .nav-list {
-  display: flex;
-  justify-content: space-between;
   padding-top: 35px;
   padding-bottom: 35px;
-  border-bottom: 1px solid #828282;
 }
 
 .nav-item {
   font-weight: 700;
   font-family: 'Gilroy ExtraBold Regular';
-  font-size: 18px;
+  font-size: 22px;
   line-height: 22px;
 }
 
+.menu-header {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-header {
+    display: none;
+  }
+}
+
+.menu-header .icon-close {
+  display: none;
+}
+
+.menu-header.is-open .icon-close {
+  display: block;
+}
+
+.menu-header.is-open .icon-menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-container {
+    display: none;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #fff;
+    border-top: 1px solid #ececec;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 4px 8px rgba(0, 0, 0, 0.04);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu-container.is-open {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    padding-bottom: 0;
+  }
+}
+
 .hero {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-list {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #828282;
+  }
+  .nav-item {
+    font-size: 18px;
+  }
+  .hero {
+    margin-bottom: 100px;
+  }
 }
 
 .hero-text-thumb {
@@ -96,10 +170,16 @@ img {
 .hero-title {
   font-size: 47px;
   line-height: 59px;
-  width: 100px;
+  max-width: 100px;
   margin-top: 40px;
   margin-bottom: 40px;
-  margin-right: 150px;
+  margin-right: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-title {
+    margin-right: 150px;
+  }
 }
 
 .hero-description {
@@ -124,8 +204,14 @@ img {
 
 .section {
   background-color: #f6f6f6;
-  padding: 120px 230px 120px 230px;
+  padding: 60px 10px 60px 10px;
   text-align: center;
+}
+
+@media screen and (min-width: 1445px) {
+  .section {
+    padding: 120px 230px 120px 230px;
+  }
 }
 
 .about-me-title {
@@ -148,8 +234,15 @@ img {
   font-size: 34px;
   line-height: 42px;
   text-align: center;
-  margin-top: 90px;
+  margin-top: 40px;
   margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .skills-title {
+    margin-top: 90px;
+    margin-bottom: 40px;
+  }
 }
 
 .skills-subtitle {
@@ -209,14 +302,23 @@ img {
 .experience-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+@media screen and (min-width: 1445px) {
+  .experience-list {
+    flex-wrap: nowrap;
+  }
 }
 
 .experience-item {
-  width: 300px;
+  max-width: 300px;
   height: 400px;
   background-color: #fff;
   border-radius: 8px;
+  padding: 10px;
+  margin: 5px;
   -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
   -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
@@ -237,12 +339,19 @@ img {
 }
 
 .thumb {
-  width: 260px;
+  max-width: 260px;
   display: block;
   height: 200px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .thumb {
+    width: 260px;
+    height: 200px;
+  }
 }
 
 .thumb > img {
@@ -312,10 +421,17 @@ img {
 }
 
 .thumb-portfolio {
-  width: 650px;
+  max-width: 650px;
   display: block;
-  height: 500px;
+  height: 300px;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .thumb-portfolio {
+    max-width: 650px;
+    height: 500px;
+  }
 }
 
 .thumb-portfolio > img {
@@ -340,16 +456,18 @@ img {
   font-size: 34px;
   line-height: 42px;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .education-list {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .education-item {
-  width: 300px;
+  margin: 10px;
+  max-width: 300px;
   height: auto;
   background-color: #fff;
   border-radius: 8px;
@@ -359,7 +477,7 @@ img {
 }
 
 .education-thumb {
-  width: 200px;
+  width: 280px;
   height: 200px;
   margin-left: auto;
   margin-right: auto;
@@ -410,9 +528,15 @@ img {
   font-size: 34px;
   line-height: 42px;
   text-align: center;
-  padding-top: 114px;
+  padding-top: 50px;
   margin-bottom: 20px;
   color: #070707;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-title {
+    padding-top: 114px;
+  }
 }
 
 .contacts-description {
@@ -424,7 +548,7 @@ img {
   margin-bottom: 30px;
 }
 
-.contacts > button {
+.send-btn {
   border: none;
   cursor: pointer;
   padding: 13px 30px 13px 30px;
@@ -437,8 +561,8 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts > button:hover,
-.contacts > button:focus {
+.send-btn:hover,
+.send-btn:focus {
   transform: scale(1.1);
 }
 
@@ -575,9 +699,9 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form > .thumb {
+.form.js-speaker-form > .thumb-form {
   margin-bottom: 10px;
-  width: auto;
+  max-width: auto;
   height: auto;
 }
 
@@ -591,8 +715,8 @@ img {
   margin-bottom: 10px;
 }
 
-.thumb > input,
-.thumb > textarea {
+.thumb-form > input,
+.thumb-form > textarea {
   font-size: 18px;
   line-height: 17px;
   width: 100%;
@@ -603,7 +727,7 @@ img {
   border-radius: 10px;
 }
 
-.thumb > input::placeholder {
+.thumb-form > input::placeholder {
   font-size: 16px;
   line-height: 17px;
   color: #828282;
