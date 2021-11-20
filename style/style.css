@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #070707;
   font-family: 'Gilroy Light Regular';
@@ -191,6 +195,10 @@ img {
   fill: #e5e5e5;
 }
 
+.experience {
+  margin-bottom: 50px;
+}
+
 .experience-title {
   font-size: 34px;
   line-height: 42px;
@@ -213,7 +221,7 @@ img {
   -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 
-  transition: transform 250ms linear;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .experience-item:hover,
@@ -269,4 +277,318 @@ img {
   margin-top: 20px;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.portfolio-title {
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio-item {
+  max-width: 700px;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  margin: 20px;
+  border-radius: 15px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+  transform: scale(1.1);
+}
+
+.portfolio-item > a {
+  cursor: pointer;
+}
+
+.thumb-portfolio {
+  width: 650px;
+  display: block;
+  height: 500px;
+  text-align: center;
+}
+
+.thumb-portfolio > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.portfolio-title-item {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 22px;
+  font-family: 'Gilroy ExtraBold Regular';
+  line-height: 22px;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.education-title {
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.education-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.education-item {
+  width: 300px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 8px;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.education-thumb {
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.education-thumb > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.education-name {
+  font-size: 18px;
+  font-family: 'Gilroy ExtraBold Regular';
+  line-height: 22px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.education-spec {
+  font-size: 16px;
+  line-height: 17px;
+  color: #828282;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.education-date {
+  font-size: 16px;
+  line-height: 17px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.contacts {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.contacts-title {
+  font-family: 'Gilroy ExtraBold Regular';
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+  padding-top: 114px;
+  margin-bottom: 20px;
+  color: #070707;
+}
+
+.contacts-description {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: center;
+  color: #070707;
+  margin-bottom: 30px;
+}
+
+.contacts > button {
+  border: none;
+  cursor: pointer;
+  padding: 13px 30px 13px 30px;
+  color: #ffffff;
+  border-radius: 25px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  background-color: #070707;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts > button:hover,
+.contacts > button:focus {
+  transform: scale(1.1);
+}
+
+.footer {
+  padding-bottom: 50px;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+}
+
+.foter-item {
+  cursor: pointer;
+}
+
+.foter-item > .link {
+  margin: 0px 20px 0px 20px;
+}
+
+.scrollToTop {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 9999;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 45px;
+  background-color: #f5f5f5;
+  color: #444;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  display: none;
+  font-size: 30px;
+  font-weight: bold;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scrollToTop:hover {
+  background-color: #070707;
+  color: white;
+}
+
+.back_to_top-show {
+  display: block;
+}
+
+/* modal */
+
+.modal-open {
+  overflow: hidden;
+}
+
+.backdrop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-open {
+  opacity: 1;
+  pointer-events: initial;
+}
+
+.team-modal {
+  padding: 20px;
+  max-width: 280px;
+  width: 100%;
+  max-height: 100%;
+  overflow-y: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  z-index: 10;
+  border-radius: 10px;
+  background-color: #ffffff;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    max-width: 618px;
+  }
+  @media screen and (min-width: 1024px) {
+    max-width: 882px;
+  }
+}
+
+.backdrop.is-open .modal {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.team-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  background-image: url('../images/icon-close.svg');
+  background-position: center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+
+  @media screen and (max-width: 767px) and (min-width: 320px) {
+    width: 25px;
+    height: 25px;
+    background-size: 60%;
+  }
+}
+
+.team-btn:hover,
+.team-btn:focus {
+  background-color: #ffffff;
+}
+
+.team-title {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  color: #000000;
+
+  @media screen and (max-width: 767px) and (min-width: 320px) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
