@@ -51,8 +51,11 @@ function submitForm(e) {
     if (refs.name.value === '' || refs.name.value === ' ') {
         alert('Enter the name');
         return
-    } else if (refs.tel.value === '' || refs.tel.value === ' ') {
-        alert('Enter the tel');
+    } else if (refs.tel.value === '' || refs.tel.value === ' ' ) {
+        alert('Enter the telephone');
+        return
+    } else if (!isNumber(refs.tel.value)) {
+        alert('Enter the numeric telephone');
         return
     } else if (refs.message.value === '' || refs.message.value === ' ') {
         alert('Enter the massage');
@@ -73,4 +76,7 @@ function reset() {
     refs.tel.value = '';
     refs.message.value = '';
 }
-  
+ 
+function isNumber(n) {
+  return !isNaN(parseFloat(n)) && isFinite(n);
+}
